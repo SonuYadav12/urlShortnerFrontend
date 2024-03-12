@@ -1,16 +1,14 @@
-import * as React from "react";
+import React from "react";
 
-interface IHeaderProps {}
-
-const Header: React.FunctionComponent<IHeaderProps> = () => {
+const Header: React.FunctionComponent = () => {
   return (
-    <div className="bg-slate-900">
-      <div className="container p-2 mx-auto">
-        <nav className="py-5">
-          <div className="text-base text-white">URLShortner</div>
+    <header className="bg-slate-900">
+      <div className="container mx-auto py-5">
+        <nav className="flex items-center justify-between">
+          <h1 className="text-2xl md:text-3xl text-white font-bold">URL Shortener</h1>
         </nav>
       </div>
-    </div>
+    </header>
   );
 };
 
